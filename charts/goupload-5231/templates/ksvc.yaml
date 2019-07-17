@@ -8,6 +8,8 @@ metadata:
   name: {{ template "fullname" . }}
 {{- end }}
   labels:
+    snappyflow/compname: goupload
+    snappyflow/appname: upenapp
     chart: "{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}"
 spec:
   runLatest:
